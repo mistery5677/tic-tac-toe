@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" type="text/css" href="style.css">
+        <title> Tic Tac Toe</title>    
+    </head>
+    <body>
+        <h1 class="titulo">Jogo do galo</h1>
+        <p class="vez-jogador" id="vez-jogador">Movimento do jogador 1</p>
+        <div class="tabuleiro">
+            <div class="linha">
+                <div class="casa" id="casa1" onclick="hello('1')"></div>
+                <div class="casa" id="casa2" onclick="hello('2')"></div>
+                <div class="casa" id="casa3" onclick="hello('3')"></div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa4" onclick="hello('4')"></div>
+                <div class="casa" id="casa5" onclick="hello('5')"></div>
+                <div class="casa" id="casa6" onclick="hello('6')"></div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa7" onclick="hello('7')"></div>
+                <div class="casa" id="casa8" onclick="hello('8')"></div>
+                <div class="casa" id="casa9" onclick="hello('9')"></div>
+            </div>
+        </div>
+        
+        <div class="show_result_container" id="show_result_constainer">
+            <h1 class="show_result" id="show_result"></h1>
+        </div>
+
+        <div class="pontuacao_container" id="pontuacao_container">
+            <p class="pontuacao-jogador1" id="pontuacao-jogador1">Pontuação do jogador 1:</p>
+            <p class="pontuacao-jogador2" id="pontuacao-jogador2">Pontuação do jogador 2:</p>
+        </div>
+        <button class="retry" onclick="retry()">Retry</button>
+        <button class="reset" onclick="reset()">Resetar pontos</button>
+        <script src="script.js"></script>
+    </body>
+</html>

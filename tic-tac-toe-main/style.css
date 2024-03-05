@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.vez-jogador {
+    margin-top: 2%;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 3%;
+    margin-left: 25%;
+    height: 400px;
+    width: 50%;
+}
+
+.casa{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-size: 100px;
+}
+
+#casa1,
+#casa2,
+#casa4,
+#casa5 {
+    border-right: solid 5px;
+    border-bottom: solid 5px;
+    border-color: black;
+}
+
+#casa3,
+#casa6 {
+    border-bottom: solid 5px;
+    border-color: black;
+}
+
+#casa7,
+#casa8 {
+    border-right: solid 5px;
+    border-color: black;
+}
+
+.linha {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.show_result {
+    font-size: 50px;
+}
